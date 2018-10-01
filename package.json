@@ -1,0 +1,46 @@
+{
+  "name": "nodejs-react-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server/server.js",
+  "scripts": {
+    "start": "node .",
+    "build": "webpack --mode production",
+    "client": "webpack-dev-server --mode development --devtool inline-source-map",
+    "server": "nodemon .",
+    "dev": "concurrently \"npm:client\" \"npm:server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "concurrently": "^4.0.1",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "csurf": "^1.9.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "express-useragent": "^1.0.12",
+    "jquery": "^3.3.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
+  }
+}
